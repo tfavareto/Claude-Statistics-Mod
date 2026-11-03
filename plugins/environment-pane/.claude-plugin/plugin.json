@@ -1,0 +1,12 @@
+{
+  "name": "environment-pane",
+  "version": "1.0.0",
+  "description": "An Environment pane beside the chat: Remote Control, a browsable project tree with a pixel Claude where it works, the context as hoverable columns, and the connectors.",
+  "types": "./types/index.d.ts",
+  "author": {
+    "name": "tfavareto",
+    "url": "https://github.com/tfavareto"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/tfavareto/claude-desktop-mods"
+}

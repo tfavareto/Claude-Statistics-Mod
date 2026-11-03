@@ -1,0 +1,25 @@
+{
+  "name": "usage-band",
+  "version": "1.0.0",
+  "description": "Shows the plan's session and weekly usage above the prompt: loading bars, reset countdowns and a pace estimate.",
+  "types": "./types/index.d.ts",
+  "userConfig": {
+    "language": {
+      "type": "string",
+      "title": "Language",
+      "description": "Language of the band: en or pt-BR.",
+      "default": "en",
+      "options": [
+        "en",
+        "pt-BR"
+      ],
+      "required": false
+    }
+  },
+  "author": {
+    "name": "tfavareto",
+    "url": "https://github.com/tfavareto"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/tfavareto/claude-desktop-mods"
+}

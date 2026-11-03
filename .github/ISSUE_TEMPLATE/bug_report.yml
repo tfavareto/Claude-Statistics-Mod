@@ -1,0 +1,37 @@
+name: Bug report
+description: Something a mod does wrong or not at all.
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: Remove home paths, account or session ids and private chat content before posting.
+  - type: dropdown
+    id: mod
+    attributes:
+      label: Mod
+      options: [chat-status, usage-band, environment-pane]
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened, and what you expected
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+  - type: input
+    id: versions
+    attributes:
+      label: Versions
+      description: Output of `claude --version`, the desktop app version, and macOS version.
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Log lines
+      description: Any `<mod>:` line from the chat or from `claude --debug`, redacted.
+      render: text

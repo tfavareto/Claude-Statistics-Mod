@@ -1,0 +1,34 @@
+{
+  "name": "chat-status",
+  "version": "1.0.0",
+  "description": "Files the current chat in the desktop sidebar by what Claude is doing: Working, Waiting, or Needs your answer.",
+  "userConfig": {
+    "workingSection": {
+      "type": "string",
+      "title": "Working section",
+      "description": "Sidebar section for chats where Claude is working.",
+      "default": "🟢 Working",
+      "required": false
+    },
+    "waitingSection": {
+      "type": "string",
+      "title": "Waiting section",
+      "description": "Sidebar section for chats waiting for your next message.",
+      "default": "⏳ Waiting",
+      "required": false
+    },
+    "responseSection": {
+      "type": "string",
+      "title": "Needs-your-answer section",
+      "description": "Sidebar section for chats where Claude asked you something.",
+      "default": "🟡 Needs your answer",
+      "required": false
+    }
+  },
+  "author": {
+    "name": "tfavareto",
+    "url": "https://github.com/tfavareto"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/tfavareto/claude-desktop-mods"
+}

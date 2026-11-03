@@ -1,0 +1,14 @@
+{
+  "name": "claude-desktop-mods",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Mods for the Claude desktop app's Code tab: sidebar status sections, a usage band and an Environment pane.",
+  "license": "MIT",
+  "type": "module",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "docs:check": "node scripts/validate-docs.mjs",
+    "test": "for m in chat-status usage-band environment-pane; do claude plugin test plugins/$m || exit 1; done",
+    "validate": "claude plugin validate . && for m in chat-status usage-band environment-pane; do claude plugin validate plugins/$m || exit 1; done"
+  }
+}

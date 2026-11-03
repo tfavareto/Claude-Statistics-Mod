@@ -1,0 +1,24 @@
+{
+  "name": "claude-desktop-mods",
+  "owner": { "name": "tfavareto" },
+  "metadata": {
+    "description": "Mods for the Claude desktop app's Code tab: sidebar status sections, a usage band above the prompt and an Environment pane."
+  },
+  "plugins": [
+    {
+      "name": "chat-status",
+      "source": "./plugins/chat-status",
+      "description": "Files the current chat in the desktop sidebar by what Claude is doing: Working, Waiting, or Needs your answer."
+    },
+    {
+      "name": "usage-band",
+      "source": "./plugins/usage-band",
+      "description": "Shows the plan's session and weekly usage above the prompt: loading bars, reset countdowns and a pace estimate."
+    },
+    {
+      "name": "environment-pane",
+      "source": "./plugins/environment-pane",
+      "description": "An Environment pane beside the chat: Remote Control, a browsable project tree with a pixel Claude where it works, the context as hoverable columns, and the connectors."
+    }
+  ]
+}
